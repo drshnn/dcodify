@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    height: 65px;
+    width: 100%;
+    /* background: inherit; */
+    position: fixed;
+}
+
+ /* header .blur {
+    background: inherit;
+    height: 60px;
+    
+    width: 100%;
+    filter: blur(25px);
+    z-index: -1;
+}  */
+
+.logo {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    padding: 13px;
+    float: left;
+    padding-left: 50px;
+    
+}
+
+.manu {
+    float: right;
+    padding-right: 20px;
+}
+
+
+
+.manu li {
+    list-style: none;
+    float: left;
+}
+
+.manu a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 18px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.logo:hover {
+    text-shadow: 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff;
+    color: rgb(255, 255, 255);
+    transition-delay: 0;
+    cursor: pointer;
+}
+
+.manu a:hover {
+    color: rgb(255, 255, 255);
+    transition-delay: .5s;
+}
+
+.manu a span {
+    position: absolute;
+    display: block;
+}
+
+.manu a span:nth-child(1) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(270deg, transparent, #ff0000);
+}
+
+.manu a:hover span:nth-child(1) {
+    right: 100%;
+    transition: .5s;
+    transition-delay: 0.5s;
+}
+
+body {
+    
+    background-image: url(decodify.jpg);
+    background-size: -100%;
+    
+    
+}
+
+
